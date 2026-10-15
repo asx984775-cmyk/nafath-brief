@@ -20,4 +20,24 @@ Resource: https://www.nist.gov/itl/ai-risk-management-framework
 
 Android runtime permissions allow users to decide whether an application can access certain sensitive features or data. A national identity application should request only the permissions it genuinely needs and explain why they are required. It should not assume that users will grant every permission. Requesting unnecessary access can reduce user trust and increase privacy risks. The application should continue to work safely when optional permissions are denied.
 
-Resource: https://developer.android.com/training/permissions/requesting
+## Networking
+
+DNS over HTTPS (DoH) sends DNS queries through an encrypted HTTPS connection to a DNS resolver. This helps prevent other parties on the network from easily reading or modifying DNS queries while they travel between the device and the resolver. However, DoH does not encrypt all internet traffic, hide the user's IP address from every service, or guarantee anonymity. A national login service should use HTTPS for its web traffic and understand that DoH is only one part of network privacy and security.
+
+Resource: https://www.rfc-editor.org/rfc/rfc8484.html
+
+Resource: https://developer.android.com/training/perm
+
+## Cybersecurity
+
+Phishing-resistant authentication is designed to prevent attackers from using fake websites to steal login credentials. FIDO2 security keys and passkeys can provide strong protection because they use cryptographic methods tied to the legitimate website or service. Unlike SMS codes, these methods are resistant to common phishing attacks. A national login service should prefer phishing-resistant methods for sensitive accounts and provide secure recovery options if users lose access.
+
+Resource: https://pages.nist.gov/800-63-4/sp800-63b.html
+
+## Data
+
+Oman's Personal Data Protection Law establishes requirements for processing personal data. A national digital identity service should identify the personal data it collects, explain the purpose of processing, protect stored information, and follow applicable legal requirements. The organisation should also check the law's executive regulations and any relevant exceptions before deciding how consent, disclosure, retention, and data-subject rights apply to the service.
+
+Resource: https://www.mtcit.gov.om/
+
+issions/requesting
