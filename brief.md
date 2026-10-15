@@ -41,3 +41,11 @@ Oman's Personal Data Protection Law establishes requirements for processing pers
 Resource: https://www.mtcit.gov.om/
 
 issions/requesting
+
+## Misconception in My Track
+
+A common misconception about networking is that encrypting DNS queries makes all internet activity private. DNS over HTTPS (DoH) encrypts queries between a device and its DNS resolver, but it does not encrypt every connection or hide all identifying information. Websites can still see the IP address connecting to them, and other network traffic may reveal information. Therefore, a national digital identity service should use DoH as one privacy measure alongside HTTPS, strong authentication, and careful data protection.
+
+## Open Question
+
+How can a national digital identity service use DNS over HTTPS to improve users' privacy without assuming that it protects all their internet activity?
