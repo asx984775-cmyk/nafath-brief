@@ -9,3 +9,15 @@ A national digital identity service allows citizens to access government service
 OpenID Connect (OIDC) is an identity layer built on top of OAuth 2.0. OAuth 2.0 is mainly used to grant applications limited access to resources, while OIDC adds authentication so an application can verify a user's identity. A national login service can use OIDC to confirm who the user is without requiring every government service to manage passwords independently. This separation improves integration between services.
 
 Resource: https://openid.net/specs/openid-connect-core-1_0.html
+
+## AI
+
+Artificial intelligence can help a national login service identify unusual sign-in patterns, such as unexpected locations or repeated failed attempts. However, an unusual login does not always mean an attack is happening. AI systems can produce false positives and false negatives, and their decisions may be affected by biased or incomplete data. The service should evaluate the system regularly, protect users' personal information, and provide a safe way to review suspicious cases.
+
+Resource: https://www.nist.gov/itl/ai-risk-management-framework
+
+## Mobile
+
+Android runtime permissions allow users to decide whether an application can access certain sensitive features or data. A national identity application should request only the permissions it genuinely needs and explain why they are required. It should not assume that users will grant every permission. Requesting unnecessary access can reduce user trust and increase privacy risks. The application should continue to work safely when optional permissions are denied.
+
+Resource: https://developer.android.com/training/permissions/requesting
